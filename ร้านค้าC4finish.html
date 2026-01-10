@@ -1,0 +1,71 @@
+
+
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ร้านค้าของทีมเรา</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; background-color: #f4f7f6; text-align: center; padding: 20px; margin: 0; }
+        .shop-header { background-color: #2c3e50; color: white; padding: 40px 20px; border-radius: 15px; margin-bottom: 30px; shadow: 0 4px 15px rgba(0,0,0,0.2); }
+        .shop-header h1 { margin: 0; font-size: 2.5em; }
+        .shop-header p { opacity: 0.9; font-size: 1.1em; }
+
+        /* ส่วนแสดงสินค้า */
+        .product-container { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; max-width: 1200px; margin: 0 auto; }
+        .product-card { background: white; padding: 25px; border-radius: 12px; width: 280px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); transition: transform 0.3s; }
+        .product-card:hover { transform: translateY(-5px); }
+        
+        /* ส่วนท้ายเว็บที่คนที่ 1 ดูแล */
+        .footer { margin-top: 50px; padding: 20px; background-color: #ecf0f1; color: #7f8c8d; border-radius: 10px; }
+        
+        h2 { color: #2c3e50; }
+        button { background-color: #27ae60; color: white; border: none; padding: 12px 25px; border-radius: 25px; cursor: pointer; font-weight: bold; }
+        button:hover { background-color: #2ecc71; }
+    </style>
+</head>
+<body>
+
+    <div class="shop-header">
+        <h1>[ร้านค้าC4]</h1> 
+        <p>[ของดีไม่ต้องพูดเยอะ รอแค่ระเบิดเวลาทำงาน!]</p> 
+    </div>
+
+    <div class="product-container">
+
+       <div class="product-card">
+            <img src="https://www.blockbrickworld.com/wp-content/uploads/2023/06/Optimus-Prime-Transformers-01-150x150.jpg" alt="Tranformer" class="product-img">
+            <h2>[Tranformer]</h2>
+            <p class="price">ราคา: [12M] บาท</p>
+            <p>[มาจากดาว ไซเบอร์ทอน มีพลังทำลายล้าสูง]</p>
+            <button onclick="alert('สั่งซื้อหุ่นยนต์! เตรียมตะลุยกับหุ่นยนต์...')">ใส่ตะกร้า</button>
+        </div>
+
+          <div class="product-container">
+        <div class="product-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSABOlYZernku23vkmRGWds400gMK8GOJjjmQ&s" alt="เครื่องบิน F-16" class="product-img">
+            <h2>ครื่องบิน F-16</h2>
+            <p class="price">ราคา: 5,000,000,000 ล้านบาท</p>
+            <p class="desc"> เครื่องบินพหุภารกิจ ที่ทำได้ทั้งภารกิจ รบทางอากาศ และ โจมตีภาคพื้นดิน </p>
+            <button onclick="alert('สั่งซื้อเครื่องบินเรียบร้อย! เตรียมขึ้นบิน...')">ใส่ตะกร้า</button>
+        </div>
+
+        <div class="product-card">
+<img src="https://www.imprintlogo.com/images/products/sound-and-motion-expanding-light-saber-for-kids-multi-color_32482_s.jpg" alt="ยาสีฟัน" class="product-img">
+                        <h2>[light saber]</h2>
+            <p class="price">ราคา: [6.6] ล้านบาท</p>
+            <p>[คุณจะหมดปัญหามีดไม่คม หั่นไม่ขาด แถมมีแสงในตัว]</p>
+           <button onclick="alert('ซื้อดาบเสร็จเเล้ว เตรียมแกว่งดาย . . . ')">ใส่ตะกร้า</button>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <p><b>📍 ติดต่อเรา:</b> [0638598673 ID line Chevy8890]</p>
+        <p>© 2026 ทีมของเรา - All Rights Reserved</p>
+    </div>
+
+</body>
+
+</html>
