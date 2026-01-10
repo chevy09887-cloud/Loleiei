@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4-GEAR GADGET - ร้านค้าของพวกเรา</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;700&display=swap');
+
+        body { 
+            font-family: 'Kanit', sans-serif; 
+            background-color: #f4f4f4; 
+            text-align: center; 
+            padding: 0; 
+            margin: 0; 
+        }
+        
+        .shop-header { 
+            background: linear-gradient(135deg, #ff6f61, #ff9a8b); 
+            color: white; 
+            padding: 50px 20px; 
+            border-radius: 0 0 30px 30px; 
+            margin-bottom: 40px; 
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+        
+        .product-container { 
+            display: flex; 
+            justify-content: center; 
+            gap: 25px; 
+            flex-wrap: wrap; 
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+        
+        .product-card { 
+            background: white; 
+            padding: 20px; 
+            border-radius: 20px; 
+            width: 280px; 
+            box-shadow: 0 10px 25px rgba(0,0,0,0.1); 
+            transition: all 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .product-card:hover { 
+            transform: translateY(-15px); 
+            box-shadow: 0 15px 35px rgba(0,0,0,0.15);
+        }
+
+        .product-img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 15px;
+            margin-bottom: 15px;
+            background-color: #f9f9f9;
+        }
+        
+        h2 { color: #333; margin: 10px 0; font-size: 1.4em; }
+        .price { font-size: 1.3em; color: #e91e63; font-weight: bold; margin: 5px 0; }
+        .desc { font-size: 0.95em; color: #777; line-height: 1.5; min-height: 60px; margin-bottom: 15px; }
+        
+        button { 
+            background-color: #28a745; 
+            color: white; 
+            border: none; 
+            padding: 12px; 
+            border-radius: 12px; 
+            cursor: pointer; 
+            width: 100%; 
+            font-weight: bold; 
+            font-size: 1.1em;
+            transition: background 0.2s;
+        }
+        
+        button:hover { background-color: #218838; }
+
+        .footer { 
+            margin-top: 60px; 
+            padding: 40px 20px;
+            color: #666; 
+            background: white;
+            border-top: 1px solid #eee;
+        }
+
+        .member-list {
+            display: inline-block;
+            text-align: left;
+            margin-top: 10px;
+            color: #444;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="shop-header">
+        <h1>4-GEAR GADGET 🛠️</h1>
+        <p>สโลแกน: ของแปลกเรามีขาย ของใช้เรามีแถม สั่งวันนี้ส่งชาติหน้า!</p>
+    </div>
+
+    <div class="product-container">
+
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1559591937-e1b116ac7636?q=80&w=500&auto=format&fit=crop" alt="ยาสีฟัน" class="product-img">
+            <h2>ยาสีฟันรสกะเพรา</h2>
+            <p class="price">ราคา: 120 บาท</p>
+            <p class="desc">แปรงแล้วเหมือนเพิ่งกินข้าวเสร็จ สดชื่นแบบไทยๆ ไม่ต้องง้ออาหารเช้า</p>
+            <button onclick="alert('เพิ่มยาสีฟันลงตะกร้าแล้ว!')">ใส่ตะกร้า</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://images.unsplash.com/photo-1618941716939-556e409949f2?q=80&w=500&auto=format&fit=crop" alt="พัดลม" class="product-img">
+            <h2>พัดลมพลังงานน้ำตา</h2>
+            <p class="price">ราคา: 599 บาท</p>
+            <p class="desc">ยิ่งเศร้า ยิ่งเย็น! เหมาะสำหรับคนอกหักหรือช่วงสอบไฟนอล</p>
+            <button onclick="alert('เพิ่มพัดลมลงตะกร้าแล้ว!')">ใส่ตะกร้า</button>
+        </div>
+
+        <div class="product-card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSABOlYZernku23vkmRGWds400gMK8GOJjjmQ&s" alt="เครื่องบิน F-16" class="product-img">
+            <h2>ครื่องบิน F-16</h2>
+            <p class="price">ราคา: 5000,000,000 ล้านบาท</p>
+            <p class="desc"> เครื่องบินพหุภารกิจ ที่ทำได้ทั้งภารกิจ รบทางอากาศ และ โจมตีภาคพื้นดิน </p>
+            <button onclick="alert('สั่งซื้อเครื่องบินเรียบร้อย! เตรียมขึ้นบิน...')">ใส่ตะกร้า</button>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        <p><strong>ติดต่อทีมงาน:</strong> โทร 081-XXX-XXXX | Line: @4GearShop</p>
+        <p><strong>จัดทำโดยสมาชิก 4 คน:</strong></p>
+        <div class="member-list">
+            1. [ชื่อ-นามสกุล] <br>
+            2. [ชื่อ-นามสกุล] <br>
+            3. [ชื่อ-นามสกุล] <br>
+            4. [ชื่อ-นามสกุล]
+        </div>
+        <p style="margin-top: 20px; font-size: 0.8em;">© 2024 ทีม 4-GEAR | Coding for Class Project</p>
+    </div>
+
+</body>
+</html>
