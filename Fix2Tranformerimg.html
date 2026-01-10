@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ร้านค้าทีมเรา (4 คน)</title>
+    <style>
+        body { font-family: sans-serif; background-color: #f4f4f4; text-align: center; padding: 20px; }
+        .shop-header { background-color: #ff6f61; color: white; padding: 30px; border-radius: 15px; margin-bottom: 30px; }
+        
+        /* จัดกล่องสินค้าให้อยู่ตรงกลาง */
+        .product-container { 
+            display: flex; 
+            justify-content: center; 
+            gap: 20px; 
+            flex-wrap: wrap; 
+        }
+        
+        /* ดีไซน์การ์ดสินค้า */
+        .product-card { 
+            background: white; 
+            padding: 20px; 
+            border-radius: 10px; 
+            width: 250px; 
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1); 
+        }
+        
+        .footer { margin-top: 40px; color: #777; border-top: 1px solid #ddd; padding-top: 20px; }
+        h2 { color: #333; margin-bottom: 5px; }
+        .price { font-size: 1.2em; color: #e91e63; font-weight: bold; }
+        button { background-color: #28a745; color: white; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer; margin-top: 10px;}
+        button:hover { background-color: #218838; }
+    </style>
+</head>
+<body>
+
+    <div class="shop-header">
+        <h1>ชื่อร้าน: [ใส่ชื่อแก๊งเราตรงนี้]</h1>
+        <p>สโลแกน: [ใส่สโลแกนเท่ๆ เรียกลูกค้า]</p>
+    </div>
+
+
+    <div class="product-container">
+
+        <div class="product-card">
+            <img src="https://www.blockbrickworld.com/wp-content/uploads/2023/06/Optimus-Prime-Transformers-01-150x150.jpg" alt="Tranformer" class="product-img">
+            <h2>[Tranformer]</h2>
+            <p class="price">ราคา: [12M] บาท</p>
+            <p>[มาจากดาว ไซเบอร์ทอน มีพลังทำลายล้าสูง]</p>
+            <button>ใส่ตะกร้า</button>
+        </div>
+
+
+        <div class="product-card">
+            <h2>[ชื่อสินค้า B]</h2>
+            <p class="price">ราคา: [XXX] บาท</p>
+            <p>[บรรยายสรรพคุณสินค้า B ให้ดูน่าซื้อ]</p>
+            <button>ใส่ตะกร้า</button>
+        </div>
+
+
+        <div class="product-card">
+            <h2>[ชื่อสินค้า C]</h2>
+            <p class="price">ราคา: [XXX] บาท</p>
+            <p>[บรรยายสรรพคุณสินค้า C ให้ดูน่าซื้อ]</p>
+            <button>ใส่ตะกร้า</button>
+        </div>
+
+    </div>
+
+
+    <div class="footer">
+        <p>ติดต่อทีมงาน: [ใส่เบอร์โทร / IG / Facebook]</p>
+        <p>จัดทำโดย: [ใส่ชื่อสมาชิกทั้ง 4 คน ตรงนี้]</p>
+    </div>
+
+</body>
+</html>
